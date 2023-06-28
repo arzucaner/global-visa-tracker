@@ -33,6 +33,10 @@ input[type="submit"] {
     font-family: 'Unbounded', sans-serif;
 }
 
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -47,4 +51,15 @@ td {
 
 h2 {
     margin-top: 20px;
+    animation: fade-in 1s ease;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
