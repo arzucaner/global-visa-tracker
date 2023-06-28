@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Global Visa Tracker is a web application that helps users track their visa applications.">
+    <title>Global Visa Tracker: Follow Your Journey!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Visa Tracking Application</h1>
+    <form id="visaForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required><br><br>
+
+        <label for="passportNumber">Passport Number:</label>
+        <input type="text" id="passportNumber" required><br><br>
+
+        <label for="applicationDate">Application Date:</label>
+        <input type="date" id="applicationDate" required><br><br>
+
+        <label for="status">Status:</label>
+        <select id="status" required>
+            <option value="" disabled selected>Please select an option</option>
+            <option value="In Process">In Process</option>
+            <option value="Approved">Approved</option>
+            <option value="Rejected">Rejected</option>
+        </select><br><br>
+
+        <input type="submit" value="Save">
+    </form>
+
+    <div id="visaList">
+        <h2>Tracking List</h2>
+        <table>
+            <tr>
+                <th>Full Name</th>
+                <th>Passport Number</th>
+                <th>Application Date</th>
+                <th>Status</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
