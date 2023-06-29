@@ -1,14 +1,23 @@
 body {
     font-family: 'Unbounded', sans-serif;
     padding: 20px;
+    box-sizing: border-box;
+    background: url('image.jpg') fixed;
+    background-size: 100%;
+    font-size: 18px
 }
 
 h1 {
     text-align: center;
+    color: white;
+    font-family: 'Unbounded', sans-serif;    
 }
 
 form {
     margin-bottom: 20px;
+    font-family: 'Unbounded', sans-serif; 
+    color: white;
+
 }
 
 input[type="text"],
@@ -21,6 +30,7 @@ select {
     box-sizing: border-box;
     margin-bottom: 10px;
     font-family: 'Unbounded', sans-serif;
+    max-width: 300px;
 }
 
 input[type="submit"] {
@@ -31,10 +41,14 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Unbounded', sans-serif;
+    display: block; 
+    margin-bottom: 10px; 
 }
 
 input[type="submit"]:hover {
     background-color: #45a049;
+    transition: background-color 0.3s ease;
+    vertical-align: middle;
 }
 
 table {
@@ -47,11 +61,14 @@ td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    color: white;
 }
 
 h2 {
     margin-top: 20px;
     animation: fade-in 1s ease;
+    color:white;
+    font-family: 'Unbounded', sans-serif;
 }
 
 @keyframes fade-in {
